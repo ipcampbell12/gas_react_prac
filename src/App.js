@@ -1,5 +1,10 @@
-export function App() {
-    return <h1>Hello world!</h1>;
+import React from "react"
+
+function App() {
+    return (<div>
+        <h1>First GAS React App</h1>;
+        <p>Here is some text</p>
+    </div>)
 }
 
-export default App;
+export default App

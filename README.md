@@ -12,7 +12,7 @@ npm install -D @google/clasp
 
 [Google Apps Script API](https://script.google.com/home/usersettings)
 
-4) Set up clasp commands
+4) Set up clasp commands in the scripts section of package.json
 ```
     "glogin": "clasp login",
     "glogout": "clasp logout",
@@ -24,8 +24,8 @@ npm install -D @google/clasp
 
 ```
 
-5) use npm run for clasp commands (make sure you do npm run glogin at some point)
-6) Run npm run gcreate to create new project 
+5) You will usse "npm run" for all the clasp commands (make sure you do npm run glogin at some point too)
+6) Run npm run gcreate to create a new project 
 7) Select project type (i.e. scripts, docs, webapp, standlone); it's fine to just choose standalone.
 8) Install auto complete for script functions (Make sure you have it set to devDependency)
 
@@ -86,3 +86,36 @@ export function App() {
 20) Your file/folder structure should look like this: 
 
 ![alt text](/screenshots/image.png)
+
+21) Add this code below your div with id of "app" in the index.js file to import your react code: 
+
+```
+ <script type="module">
+        import "./index.js"
+    </script>
+```
+
+22) Add this command to the script section package.json; this is parcel can start your react application direct it to google apps script. This will be for the development version.
+
+```
+"start": "parcel src/index.html --dist-dir ./apps-script"
+```
+
+23) Then add this command for buildign the optimized final version: 
+
+```
+"build": "parcel build src/index.html --dist-dir ./apps-script"
+```
+
+24) Your package.json file should look like this: 
+![alt text](/screenshots/image3.pngg)
+
+25) Need to import and install react and react-dom
+```
+npm install react react-dom
+```
+
+26) You can have two bashes running, one for the development server, and one for the pushign changes to google: 
+
+![alt text](/screenshots/image-4.png)
+
