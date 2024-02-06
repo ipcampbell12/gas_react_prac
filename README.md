@@ -24,7 +24,7 @@ npm install -D @google/clasp
 
 ```
 
-5) use npm run for clasp commands
+5) use npm run for clasp commands (make sure you do npm run glogin at some point)
 6) Run npm run gcreate to create new project 
 7) Select project type (i.e. scripts, docs, webapp, standlone); it's fine to just choose standalone.
 8) Install auto complete for script functions (Make sure you have it set to devDependency)
