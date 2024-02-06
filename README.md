@@ -119,3 +119,7 @@ npm install react react-dom
 
 ![alt text](/screenshots/image-4.png)
 
+27) Install and import react-router-dom
+```
+npm install react-router-dom localforage match-sorter sort-by
+```
