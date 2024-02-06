@@ -85,4 +85,4 @@ export function App() {
 19) Add a .gitignore file with node_modules added, then initialize a git repository
 20) Your file/folder structure should look like this: 
 
-
+![alt text](/screenshots/image.png)
