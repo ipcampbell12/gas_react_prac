@@ -1,0 +1,22 @@
+{
+  "name": "react_gas_prac",
+  "version": "1.0.0",
+  "description": "",
+  "scripts": {
+    "glogin": "clasp login",
+    "glogout": "clasp logout",
+    "gcreate": "clasp create --title ''React Test Project --rootDir ./apps-script",
+    "gpush": "clasp push",
+    "gpull": "clasp pull",
+    "gclone": "clasp clone <id> --rootDir ./apps-script",
+    "gwatch": "clasp push --watch"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@google/clasp": "^2.4.2",
+    "@types/google-apps-script": "^1.0.79",
+    "parcel": "^2.11.0"
+  }
+}
