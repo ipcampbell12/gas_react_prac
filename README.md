@@ -1,9 +1,28 @@
-1) Start project:  
-> npm init -y
+1) Start node project:  
+```
+npm init -y
+```
 2) Install clasp - make sure you have -D: 
-> npm install -D @google/clasp
-3) Enable google apps script API: https://script.google.com/home/usersettings
+
+```
+npm install -D @google/clasp
+```
+
+3) Go to this URL to enable the google apps script API: 
+```
+https://script.google.com/home/usersettings
+```
 4) Set up clasp commands
+```
+    "glogin": "clasp login",
+    "glogout": "clasp logout",
+    "gcreate": "clasp create --title ''React Test Project --rootDir ./apps-script",
+    "gpush": "clasp push",
+    "gpull": "clasp pull",
+    "gclone": "clasp clone <id> --rootDir ./apps-script",
+    "gwatch": "clasp push --watch"
+
+```
 5) use npm run for clasp commands
 6) Run npm run gcreate to create new project 
 7) Select project type: 
@@ -12,7 +31,9 @@
 
 8) Install auto complete for script functions:
 Make sure you have it set to devDependency 
-> npm i -D @types/google-apps-script
+```
+npm i -D @types/google-apps-script
+```
 9) File structure so far: 
 
 ![alt text](image-1.png)
