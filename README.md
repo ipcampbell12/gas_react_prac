@@ -91,7 +91,7 @@ export function App() {
 
 ```
  <script type="module">
-        import "./index.js"
+        import value from "./index.js"
     </script>
 ```
 
